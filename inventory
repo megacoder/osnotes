@@ -1,0 +1,20 @@
+# Nodder gromish
+oswfindmnt	/bin/findmnt
+oswdf		/bin/df -ali
+oswifconfig	/sbin/ifconfig -a
+oswiostat	/bin/iostat
+oswiostat	/bin/iostat -xk 1 3
+oswmeminfo	/bin/cat /proc/meminfo
+oswmpstat	/bin/mpstat -P ALL 1 2
+oswnetstat-ain	/bin/netstat -a -i -n
+oswnetstat-s	/bin/netstat -s
+# oswnfsstat	/bin/iostat -nk 1 3
+oswps		/bin/ps -elf
+oswslabinfo	/bin/cat /proc/slabinfo
+oswslabs	/bin/vmstat -m
+oswtime		/bin/date; /bin/date; /bin/date
+oswtop		helpers/top
+oswtop-b	/bin/top -b -n1 -d1
+oswtop-shell	/bin/top -b -n 1 | /bin/head -n50
+oswuptime	/bin/uptime
+oswvmstat	/bin/vmstat 1 3
